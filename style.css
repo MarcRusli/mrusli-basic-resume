@@ -17,6 +17,7 @@ body {
     background-color: black;
     color: white;
 }
+
 /* common styles */
 img {
     width: 100%
@@ -24,4 +25,22 @@ img {
 a {
     text-decoration: none;
     color: white;
+}
+
+/* layouts */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%
+    }
 }
